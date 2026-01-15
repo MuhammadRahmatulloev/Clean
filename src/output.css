@@ -168,8 +168,26 @@
   }
 }
 @layer utilities {
+  .m-\[100px\] {
+    margin: 100px;
+  }
   .m-auto {
     margin: auto;
+  }
+  .mt-25 {
+    margin-top: calc(var(--spacing) * 25);
+  }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
+  .mt-50 {
+    margin-top: calc(var(--spacing) * 50);
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
   }
   .flex {
     display: flex;
@@ -177,16 +195,11 @@
   .table {
     display: table;
   }
-  .size-\[1px\] {
-    width: 1px;
-    height: 1px;
+  .h-150 {
+    height: calc(var(--spacing) * 150);
   }
-  .size-px {
-    width: 1px;
-    height: 1px;
-  }
-  .h-155 {
-    height: calc(var(--spacing) * 155);
+  .h-160 {
+    height: calc(var(--spacing) * 160);
   }
   .h-170 {
     height: calc(var(--spacing) * 170);
@@ -194,11 +207,8 @@
   .h-175 {
     height: calc(var(--spacing) * 175);
   }
-  .h-\[700\] {
-    height: 700;
-  }
-  .h-\[700px\] {
-    height: 700px;
+  .h-\[650px\] {
+    height: 650px;
   }
   .h-full {
     height: 100%;
@@ -209,9 +219,6 @@
   .w-\[50\%\] {
     width: 50%;
   }
-  .w-\[60\%\] {
-    width: 60%;
-  }
   .w-\[70\%\] {
     width: 70%;
   }
@@ -220,9 +227,6 @@
   }
   .w-\[90\%\] {
     width: 90%;
-  }
-  .w-\[100\%\] {
-    width: 100%;
   }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
@@ -248,11 +252,11 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -266,12 +270,6 @@
   .gap-12\.5 {
     gap: calc(var(--spacing) * 12.5);
   }
-  .gap-15 {
-    gap: calc(var(--spacing) * 15);
-  }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
-  }
   .self-center {
     align-self: center;
   }
@@ -281,17 +279,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-s {
-    border-inline-start-style: var(--tw-border-style);
-    border-inline-start-width: 1px;
-  }
-  .border-solid {
-    --tw-border-style: solid;
-    border-style: solid;
-  }
-  .border-\[\#EFF0F6\] {
-    border-color: #EFF0F6;
   }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
@@ -330,11 +317,17 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[45px\] {
+    font-size: 45px;
+  }
   .text-\[50px\] {
     font-size: 50px;
   }
   .text-\[60px\] {
     font-size: 60px;
+  }
+  .text-\[70\%\] {
+    font-size: 70%;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
